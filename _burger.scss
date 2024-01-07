@@ -1,0 +1,37 @@
+.burger-menu {
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 2rem;
+	height: 1rem;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	z-index: 10;
+}
+
+.burger-menu:focus {
+	outline: none;
+}
+
+.burger-menu div {
+	width: 2rem;
+	height: 0.25rem;
+	margin-bottom: 5px;
+	background: #ffffff;
+	border-radius: 10px;
+	transition: all 0.3s linear;
+	position: relative;
+	transform-origin: 1px;
+}
+.burger-menu div:last-child {
+	margin-bottom: 0px;
+}
+
+@media (max-width: 780px) {
+	.burger-menu {
+		display: block;
+		justify-self: end;
+	}
+}
